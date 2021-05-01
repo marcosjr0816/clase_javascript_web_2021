@@ -245,3 +245,106 @@ NaN -> false
 
 console.log(Boolean(String(0)))
 console.log(Boolean(0))
+
+// OPERADORES BÁSICOS
+
+// Operadores unarios y binarios
+
+let  res;
+a = 5;
+b = 2;
+
+// Operadores Binarios
+
+res = a + b;
+res = a - b;
+res = a * b;
+res = a / b;
+res = a % b; // mod
+res = a ** b; // potencia
+
+//alert('1' + 2); //12
+//alert(1 + '2'); // 12
+
+//alert(2 + 2 + '1') //41
+//alert('1' + 2 + 2) //122
+
+//alert(2 - '1'); // 1
+//alert('6' / '2'); // 3
+//alert('6' / '2a'); // 
+
+// Operaciones Unaria +
+
+a = 1;
+console.log(+a);
+
+a = -1;
+console.log(+a);
+
+console.log(+true);
+console.log(+false);
+console.log(+NaN);
+console.log(+undefined);
+console.log(+null);
+console.log(+"");
+
+a = "2";
+b = "3";
+
+console.log(+a + +b);
+console.log(Number(a)+Number(b))
+
+
+// Operaciones Unaria -
+
+a = 1;
+console.log(-a);
+
+a = -1;
+console.log(-a);
+
+console.log(-true);
+console.log(-false);
+
+// ASIGNACIONES
+
+a = 2 + 3;
+a = b = c = 2 + 3;
+
+c = 2 + 3;
+b = c;
+a = b;
+
+c = 3 - (a = b + 1);
+
+// Modificadores
+
+a = a + 2;
+a += 2;
+a = a - 2
+a -= 2;
+
+// Incremento y Decremento
+
+// ++ Incremento
+// -- Decremento
+
+a = 2;
+a ++;
+console.log(a); // 3
+
+a = 2;
+a --;
+console.log(a); // 1
+
+// Posición del incremento o decremento
+
+a = 1;
+b = ++ a;
+console.log(b); // 2
+
+a = 1;
+b = a ++;
+c = a;
+console.log(b); // 1
+console.log(c); // 2
