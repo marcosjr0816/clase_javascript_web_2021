@@ -161,11 +161,87 @@ let edad_dos;
 
 // El operador typeof o función typeof(x), devuelve el tipo de dato.
 
-console.log(typeof undefined); //undefined
+/*console.log(typeof undefined); //undefined
 console.log(typeof 0); //number
 console.log(typeof true); //boolean
 console.log(typeof 10n); //bigint
 console.log(typeof "Hola"); //string
 console.log(typeof(alert)); // function **
 console.log(typeof(null)); // object - ERROR DE JAVASCRIPT
-console.log(typeof(Math)); // object
+console.log(typeof(Math)); // object*/
+
+// Interacciones: alert, prompt, confirm
+
+// alert
+
+// alert('Hola Mundo');
+
+// prompt
+
+//let nombre_capturado = prompt('Digite el nombre', 'Hola');
+//alert(nombre_capturado);
+
+//prompt('Digite el nombre')
+//prompt('Digite el nombre', '') //solo para IE
+
+// Confirm
+
+//let esHelado = confirm('¿Te gusta el helado?');
+//console.log(esHelado); // true si presionan OK y false si presionan cancelar
+
+// CONVERSIÓN DE TIPOS
+
+// Existen dos tipos de conversiones explícita e implícita
+
+//Convertir a String
+
+let valor = true;
+console.log(typeof valor);
+
+valor = String(valor); // "true"
+valor = String(false); // "false"
+valor = String(null); // "null"
+valor = String(undefined); //undefined
+console.log(valor);
+console.log(typeof valor);
+
+// Convertir a Número
+
+// Conversiones númericas ocurren automáticamente en funciones matemáticas y expresiones
+
+//alert('6' / '2'); // 3
+//alert(1 + '2'); //'12'
+//alert('1' + 2); //'12'
+
+let cadena = "123"
+let num_cad = Number(cadena); // 123
+
+console.log(Number('hola')); //NaN
+
+/*
+TABLA CONVERSIÓN NÚMEROS
+undefined -> NaN
+null -> 0
+true -> 1
+false -> 0
+string '' -> 0
+string 'hola' -> NaN
+*/
+
+// Convertir a Boleano
+
+console.log(Boolean("hola"))
+
+/*
+TABLA CONVERSIÓN BOOLEANOS
+undefined -> false
+null -> false
+string '' -> false
+NaN -> false
+0 -> false
+'0' -> true
+'  ' -> true
+*/
+
+console.log(Boolean(String(0)))
+console.log(Boolean(0))
